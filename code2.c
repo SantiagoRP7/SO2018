@@ -15,12 +15,12 @@ int main(int argc, char **argv) {
   // Usar estas variables                                                              
   int x;                                                                               
   pid_t pid;                                                                           
-  char *filename="code-02.txt";                                                        
+  char *filename="./code2.txt";                                                        
   int fd;                                                                              
                                                                                        
    //                                                                                   
   close(STDOUT_FILENO);
-  fd= open("./p4.output", O_CREAT|O_WRONLY|O_TRUNC, S_IRWXU); // Instrucciones para abrir archivo de lectura/escritura)                            
+  fd= open(filename, O_CREAT|O_WRONLY|O_TRUNC, S_IRWXU); // Instrucciones para abrir archivo de lectura/escritura)                            
    //                                                                                   
                                                                                        
   x = 100;                                                                             
