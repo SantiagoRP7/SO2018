@@ -17,13 +17,12 @@ int main(char *argc, char** argv) {
   pid_t pid;                                                                           
   x=100;                                                                              
   if(!pid=fork()){
-	printf("i'am the soon, i see: %d\n", pid);
+	  x=5;
+	printf("i'am the soon, i see: %d\n", x);
   }else{
-	
-	printf("i'm the father and i see: %d\n", pid);
-  } //                                                                                   
-  // SU CODIGO                                                                         
-  //                                                                                   
+	x=500;
+	printf("i'm the father and i see: %d\n", x);
+  }                                                                               
                                                                                        
   return 0;                                                                            
 }                      
