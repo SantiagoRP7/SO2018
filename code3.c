@@ -19,7 +19,8 @@ int main(int argc, char** argv) {
                                                                                        
  pid = fork(); // invoque la llamada al sistema fork()                                              
   if (pid != 0) {
-	wait();                                                                      
+	wait();//sleep(3); alternativa poco viable. 
+	  
    printf("goodbye");  // esta es la parte del padre que debe imprimir 'goodbye'                          
   } else {                                                                             
    printf("hello"); // esta es la parte del hijo que debe imprimir 'hello'                             
